@@ -82,7 +82,7 @@ Or use `ALT + SPACE` to open KRunner (more of that later), then search for "Keyb
 I have already made `cd` an alias for "`z`/`zoxide`" in the aliases. You can change it in your `.zshrc` (`cfz` in terminal).
 
 #### [fzf](https://www.youtube.com/watch?v=MvLQor1Ck3M) — fuzzy file finder and history search
-It is bound to `CTRL + R` (see the `.config/zsh/.zshrc` (aliased to `cfz`)).
+It is bound to `CTRL + T` (or `CTRL + R` for history search; see the `.config/zsh/.zshrc` (aliased to `cfz`)). 
 
 #### [neovim](https://neovim.io/) — text/code editor  
 
