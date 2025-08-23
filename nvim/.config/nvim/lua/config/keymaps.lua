@@ -276,7 +276,7 @@ vim.keymap.set({ "n", "v", "i" }, "<M-z>", function()
   local fileName = vim.fn.expand("%:t") -- Gets the name of the file
   local goProjectPath = filePath:gsub("^~/", ""):gsub("/[^/]+$", "") -- Removes the ~/ at the start and the filename at the end
   -- Add .com to github and insert username
-  goProjectPath = goProjectPath:gsub("github", "github.com/anatar-the-fair")
+  goProjectPath = goProjectPath:gsub("github", "github.com/USER")
   -- Add "go mod init" to the beginning
   goProjectPath = "go mod init " .. goProjectPath
   local lineToInsert = "Filename: " .. filePath

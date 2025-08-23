@@ -16,24 +16,29 @@ vim.opt.rtp:prepend(vim.env.LAZY or lazypath)
 local lazy = require("lazy")
 
 -- Set the python3_host_prog variable
-vim.g.python3_host_prog = os.getenv("HOME") .. "/.local/share/nvim/venv"
+vim.g.python3_host_prog = "/usr/bin/python3"
+-- Or you can use a custom environment like this
+-- vim.g.python3_host_prog = os.getenv("HOME") .. "/.local/share/venv/nvim"
+
+-- I know what I am doing :)
+vim.g.lazyvim_check_order = false 
 
 -- Load default plugins at startup
 lazy.setup({
-  rocks = {
-	  enabled = false,
-	  hererocks = false
-  },
--- Preload missing/needed plugins manually
+  -- 1. Optionally load LazyVim extras (examples, customize as needed)
+  -- { import = "lazyvim.plugins.extras.lang.typescript" },
+  -- { import = "lazyvim.plugins.extras.coding.copilot" },
+
+  -- 2. Preload any specific plugins
   { "folke/flash.nvim" },
   { "nvim-lualine/lualine.nvim" },
   { "nvim-telescope/telescope.nvim" },
 
+  -- 3. Your own plugin specs
   { import = "plugins.default" },
-}, 
-
-{
-  defaults = { lazy = false }, -- default plugins load eagerly
+  { import = "plugins.default.colorschemes" },
+}, {
+  defaults = { lazy = false },
   performance = {
     rtp = {
       disabled_plugins = {

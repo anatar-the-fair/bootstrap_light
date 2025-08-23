@@ -3,7 +3,7 @@ set -euo pipefail
 
 # --- Config ---
 REPO_DIR="$HOME/dotfiles"
-STOW_DIRS=(bin helix kitty shell zsh yazi)
+STOW_DIRS=(bin nvim kitty shell zsh yazi)
 
 # --- Helpers ---
 backup_and_stow() {
@@ -32,7 +32,7 @@ trap cleanup ERR
 echo ">>> Installing essentials"
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y zsh curl build-essential eza fzf bat fd-find highlight neovim kitty git stow
+sudo apt install -y zsh curl build-essential eza fzf bat fd-find highlight neovim kitty wl-clipboard git stow
 
 echo ">>> Ensuring XDG directories exist"
 XDG_DATA_HOME="${XDG_DATA_HOME:-$HOME/.local/share}"

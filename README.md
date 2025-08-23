@@ -170,10 +170,9 @@ If you'd like to stick to using gruvbox, look for wallpapers [here](https://gruv
 
 ### neovim
 
-Find a theme on [github](https://github.com/topics/neovim-theme), download the luafile into 
-
-
-Enable it by opening neovim and running `SPACE > `
+ 1. Find a theme on [github](https://github.com/topics/neovim-theme), download the luafile or make an entry in `.config/nvim/lua/plugins/default/colorschemes/`
+ 2. It will now appear in the list of colorschemes when you run: `:colorscheme `,
+    note the space at the end.
 
 ### Ricing
 

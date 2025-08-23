@@ -1,6 +1,4 @@
-vim.g.snacks_animate = false
 vim.g.loaded_perl_provider = 0
-vim.g.image_storage_path = "img/imgs"
 
 vim.g.mapleader = " "
 
