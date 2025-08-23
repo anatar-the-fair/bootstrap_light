@@ -1,3 +1,6 @@
+# Use neovim for vim if present.
+[ -x "$(command -v nvim)" ] && alias vim="n" vimdiff="nvim -d"
+
 # Verbosity and settings that you pretty much just always are going to want.
 alias \
 	cp="cp -iv" \
@@ -15,6 +18,10 @@ alias \
 	la="eza -lah --icons --group-directories-first" \
 	grep="grep --color=auto" \
 	ip="ip -color=auto"
+
+# Abbreviating common commands.
+alias \
+	n='nvim' \
 
 alias \
 	ref='shortcuts >/dev/null; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/shortcutenvrc ; source ${XDG_CONFIG_HOME:-$HOME/.config}/shell/zshnameddirrc'

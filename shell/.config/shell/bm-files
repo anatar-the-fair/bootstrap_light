@@ -5,7 +5,6 @@ bf	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-files	# This file, a list of bookm
 bd	${XDG_CONFIG_HOME:-$HOME/.config}/shell/bm-dirs		# A list of bookmarked directories similar to this file
 
 # These do not update automatically, but on the next new instance of a program:
-cfh	${XDG_CONFIG_HOME:-$HOME/.config}/helix/config.toml # helix config
 cfk	${XDG_CONFIG_HOME:-$HOME/.config}/kitty/kitty.conf # kitty conifg
 cfz	$ZDOTDIR/.zshrc						# zsh (shell) config
 cfa	${XDG_CONFIG_HOME:-$HOME/.config}/shell/aliasrc		# aliases used by zsh (and potentially other shells)
